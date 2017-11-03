@@ -33,6 +33,11 @@ public class TimeUtil {
     public static String getTimeSimple() {
         return getTimeByFormat("yyyyMMddHHmmss");
     }
+
+    public static String getTimeSimple2() {
+        return getTimeByFormat("yyyyMMddHHmm");
+    }
+
     /**
      * 获得yyyyMM格式的当前时间
      * @return
@@ -967,10 +972,11 @@ public class TimeUtil {
     public static void main(String[] args) throws ParseException {
 
 
-        Long timeNow = getCurrentTime();
+        System.out.println(getTimeSimple2());
+        /*Long timeNow = getCurrentTime();
         Long timeBegin = dateToStampAll(TimeUtil.getAfterDayAll(timeNow, -30));
         System.out.println(stampToDateAll(1477929600000L));
-        System.out.println(stampToDateAll(timeNow));
+        System.out.println(stampToDateAll(timeNow));*/
 
 
 
